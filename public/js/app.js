@@ -25,7 +25,8 @@ const error = document.getElementById('error');
 
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
+    result.textContent = "";
+    error.textContent = "";
     const location = search.value;
     const url = "/weather?address=" + location;
     getWeather(url, (data) => {
