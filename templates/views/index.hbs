@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link href="./image/favicon.png" rel="icon"/>
+    <link href="./css/styles.css" rel="stylesheet" />
+
+    <title>web-server</title>
+  </head>
+  <body>
+    <div class="main-content">
+      {{>header}}
+      <p>Get Weather Here</p>
+
+      <form>
+        <input placeholder="City">
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="result"></p>
+      <p id="error"></p>
+    </div>
+
+   
+ 
+    {{!-- <h1>{{title}}</h1> --}}
+    {{!-- <h3>{{name}}</h3> --}}
+    {{>footer}}
+
+
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
